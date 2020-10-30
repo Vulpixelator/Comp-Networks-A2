@@ -1,0 +1,13 @@
+Design Goals, as given to me: 
+1)  Seeker establishes a connection with a 3 way handshake. Creator sends a message and Seeker receives it. Seeker sends a message and Creator receives it. 
+Creator then sends a close message.
+
+2) Our goal in using TCP is to make sure that our data is able to be sent reliably back and forth between multiple job creators and senders without loss of data.
+
+3) Job seekers will establish a connection with the job creator. The job creator sends a message asking to send a job. 
+The job seeker then receives the job and messages back that the job is complete or declines the job. The creator receives the completion message or 
+non acceptance message and once all jobs are complete sends a close message.
+
+4) Job seekers must establish a connection with a three way handshake. Job seeker nodes can not connect directly to each other. 
+Job creators must send a specified number of jobs to seekers before closing. Job seekers can accept or decline a job. 
+Job creators receive information of a job’s completion or denial and end when the required amount of jobs is complete.    
