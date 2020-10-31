@@ -1,0 +1,26 @@
+CASE 0: 
+	Start a Job Creator 'Ca', start a Job Seeker 'Sa', connection is terminated by Sa
+
+CASE 0: 
+	Start a Job Creator 'Ca', start a Job Seeker 'Sa', connection is terminated by Ca
+	
+CASE 2:
+	Start a Job Creator 'Ca' and create a Job 'CaJ1', 
+	start a Job Seeker 'Sa', Sa connects to Ca and rejects job offer from Ca, 
+	connection is maintained, Sa accepts job offer from Ca, 
+	connection is maintained, Sa rejects job offer from Ca, 
+	connection is terminated
+
+CASE 3:
+	Start a Job Creator 'Ca' and create Jobs 'CaJ1' and 'CaJ2, 
+	Start another Job Creator 'Cb' and create a Job 'CbJ1',
+	Start a job seeker 'Sa', Sa connects to Ca and accepts job CaJ1,
+	connection is maintained, Sa accepts job CaJ2, connection is maintained,
+	Sa connects to Cb and accepts job CbJ1, connection is terminated
+
+CASE 4:
+	Start a Job Creator 'Ca' and create a Job 'CaJ1',
+	start Job Seekers 'Sa1', 'Sa2' and 'Sa3',
+	Sa1, Sa2 and Sa3 connect to Ca and all accept job CaJ1,
+	Sa1 completes job CaJ1, connection is terminated with Sa1 and Sa2 but
+	maintained with Sa1, connection is terminated by Sa1
